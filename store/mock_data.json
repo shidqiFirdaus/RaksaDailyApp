@@ -1,0 +1,361 @@
+{
+    "data": [{
+        "picture": [
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:48:16",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "chat": "Tolong dilampirkan dokumen ABC",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:49:31",
+                "chat_user_name": "yonathan_marhan@araksa.com",
+                "chat": "Berikut saya lampirkan dokumen yang diminta",
+                "namafile": "Rekap Penilaian RIMACI Edisi 711.xlsx - Sheet1 (24).pdf,",
+                "link_file": [
+                    "https://www.araksa.com/docapr/att/114968/Rekap Penilaian RIMACI Edisi 711.xlsx - Sheet1 (24).pdf"
+                ]
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:50:13",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "chat": "OK cukup",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:50:23",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "chat": "Terima kasih",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:51:30",
+                "chat_user_name": "isti_marlisa@araksa.com",
+                "chat": "Mohon dilampirkan data2 DEFG",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:53:14",
+                "chat_user_name": "yonathan_marhan@araksa.com",
+                "chat": "Berikut saya lampirkan data-data DEFG",
+                "namafile": "WhatsApp Image 2023-01-12 at 17.19.04.jpeg,Rimaci 26 Agustus (Repaired).pdf,",
+                "link_file": [
+                    "https://www.araksa.com/docapr/att/114968/WhatsApp Image 2023-01-12 at 17.19.04.jpeg",
+                    "https://www.araksa.com/docapr/att/114968/Rimaci 26 Agustus (Repaired).pdf"
+                ]
+            }
+        ],
+        "chat": [
+            {
+                "chat": "Tolong dilampirkan dokumen ABC",
+                "tgl_chat": "16-01-2023 17:48:16",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "chat": "Berikut saya lampirkan dokumen yang diminta",
+                "tgl_chat": "16-01-2023 17:49:31",
+                "chat_user_name": "yonathan_marhan@araksa.com",
+                "namafile": "Rekap Penilaian RIMACI Edisi 711.xlsx - Sheet1 (24).pdf",
+                "link_file": [
+                    "https://www.araksa.com/docapr/att/114968/Rekap Penilaian RIMACI Edisi 711.xlsx - Sheet1 (24).pdf"
+                ]
+            },
+            {
+                "chat": "OK cukup",
+                "tgl_chat": "16-01-2023 17:50:13",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "chat": "Terima kasih",
+                "tgl_chat": "16-01-2023 17:50:23",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "chat": "Mohon dilampirkan data2 DEFG",
+                "tgl_chat": "16-01-2023 17:51:30",
+                "chat_user_name": "isti_marlisa@araksa.com",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "chat": "Berikut saya lampirkan data-data DEFG",
+                "tgl_chat": "16-01-2023 17:53:14",
+                "chat_user_name": "yonathan_marhan@araksa.com",
+                "namafile": "WhatsApp Image 2023-01-12 at 17.19.04.jpeg,Rimaci 26 Agustus (Repaired).pdf",
+                "link_file": [
+                    "https://www.araksa.com/docapr/att/114968/WhatsApp Image 2023-01-12 at 17.19.04.jpeg",
+                    "https://www.araksa.com/docapr/att/114968/Rimaci 26 Agustus (Repaired).pdf"
+                ]
+            }
+        ],
+        "app_status": [
+            {
+                "rowid": "5615",
+                "email1": "yonathan_marhan@araksa.com",
+                "email2": "",
+                "duration": "0",
+                "discontinue": "n",
+                "keterangan": "TEST APPROVAL 1",
+                "reject": "Y",
+                "tglbuat": "16-01-2023 17:47:50"
+            },
+            {
+                "rowid": "13417",
+                "email1": "aldika_herold@araksa.com",
+                "email2": "",
+                "duration": "0",
+                "discontinue": "n",
+                "keterangan": "dokumen sudah lengkap jadi diapproved",
+                "reject": "Y",
+                "tglbuat": "16-01-2023 17:50:43"
+            },
+            {
+                "rowid": "5579",
+                "email1": "isti_marlisa@araksa.com",
+                "email2": "",
+                "duration": "0",
+                "discontinue": "n",
+                "keterangan": "Test Approval 3",
+                "reject": "Y",
+                "tglbuat": "16-01-2023 17:54:34"
+            }
+        ]
+    },{
+        "picture": [
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:48:16",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "chat": "Tolong dilampirkan dokumen ABC",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:49:31",
+                "chat_user_name": "yonathan_marhan@araksa.com",
+                "chat": "Berikut saya lampirkan dokumen yang diminta",
+                "namafile": "Rekap Penilaian RIMACI Edisi 711.xlsx - Sheet1 (24).pdf,",
+                "link_file": [
+                    "https://www.araksa.com/docapr/att/114968/Rekap Penilaian RIMACI Edisi 711.xlsx - Sheet1 (24).pdf"
+                ]
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:50:13",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "chat": "OK cukup",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:50:23",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "chat": "Terima kasih",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:51:30",
+                "chat_user_name": "isti_marlisa@araksa.com",
+                "chat": "Mohon dilampirkan data2 DEFG",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "rowid": "114968",
+                "rowidpermintaan": "49",
+                "permintaan": "CCR",
+                "rowidcabang": "45",
+                "reg_id": "114968-01-2023",
+                "tgl_request": "16-01-2023 17:46:21",
+                "judul": "TEST API",
+                "keterangan": "TEST API",
+                "tgl_chat": "2023-01-16 17:53:14",
+                "chat_user_name": "yonathan_marhan@araksa.com",
+                "chat": "Berikut saya lampirkan data-data DEFG",
+                "namafile": "WhatsApp Image 2023-01-12 at 17.19.04.jpeg,Rimaci 26 Agustus (Repaired).pdf,",
+                "link_file": [
+                    "https://www.araksa.com/docapr/att/114968/WhatsApp Image 2023-01-12 at 17.19.04.jpeg",
+                    "https://www.araksa.com/docapr/att/114968/Rimaci 26 Agustus (Repaired).pdf"
+                ]
+            }
+        ],
+        "chat": [
+            {
+                "chat": "Tolong dilampirkan dokumen ABC",
+                "tgl_chat": "16-01-2023 17:48:16",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "chat": "Berikut saya lampirkan dokumen yang diminta",
+                "tgl_chat": "16-01-2023 17:49:31",
+                "chat_user_name": "yonathan_marhan@araksa.com",
+                "namafile": "Rekap Penilaian RIMACI Edisi 711.xlsx - Sheet1 (24).pdf",
+                "link_file": [
+                    "https://www.araksa.com/docapr/att/114968/Rekap Penilaian RIMACI Edisi 711.xlsx - Sheet1 (24).pdf"
+                ]
+            },
+            {
+                "chat": "OK cukup",
+                "tgl_chat": "16-01-2023 17:50:13",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "chat": "Terima kasih",
+                "tgl_chat": "16-01-2023 17:50:23",
+                "chat_user_name": "aldika_herold@araksa.com",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "chat": "Mohon dilampirkan data2 DEFG",
+                "tgl_chat": "16-01-2023 17:51:30",
+                "chat_user_name": "isti_marlisa@araksa.com",
+                "namafile": "",
+                "link_file": ""
+            },
+            {
+                "chat": "Berikut saya lampirkan data-data DEFG",
+                "tgl_chat": "16-01-2023 17:53:14",
+                "chat_user_name": "yonathan_marhan@araksa.com",
+                "namafile": "WhatsApp Image 2023-01-12 at 17.19.04.jpeg,Rimaci 26 Agustus (Repaired).pdf",
+                "link_file": [
+                    "https://www.araksa.com/docapr/att/114968/WhatsApp Image 2023-01-12 at 17.19.04.jpeg",
+                    "https://www.araksa.com/docapr/att/114968/Rimaci 26 Agustus (Repaired).pdf"
+                ]
+            }
+        ],
+        "app_status": [
+            {
+                "rowid": "5615",
+                "email1": "yonathan_marhan@araksa.com",
+                "email2": "",
+                "duration": "0",
+                "discontinue": "n",
+                "keterangan": "TEST APPROVAL 1",
+                "reject": "Y",
+                "tglbuat": "16-01-2023 17:47:50"
+            },
+            {
+                "rowid": "13417",
+                "email1": "aldika_herold@araksa.com",
+                "email2": "",
+                "duration": "0",
+                "discontinue": "n",
+                "keterangan": "dokumen sudah lengkap jadi diapproved",
+                "reject": "Y",
+                "tglbuat": "16-01-2023 17:50:43"
+            },
+            {
+                "rowid": "5579",
+                "email1": "isti_marlisa@araksa.com",
+                "email2": "",
+                "duration": "0",
+                "discontinue": "n",
+                "keterangan": "Test Approval 3",
+                "reject": "Y",
+                "tglbuat": "16-01-2023 17:54:34"
+            }
+        ]
+    }]
+}

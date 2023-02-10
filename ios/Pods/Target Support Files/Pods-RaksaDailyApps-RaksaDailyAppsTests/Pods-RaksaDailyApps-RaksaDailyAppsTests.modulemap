@@ -1,0 +1,6 @@
+module Pods_RaksaDailyApps_RaksaDailyAppsTests {
+  umbrella header "Pods-RaksaDailyApps-RaksaDailyAppsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
