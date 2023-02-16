@@ -61,6 +61,7 @@ import axios from 'axios';
 import {useDispatch} from 'react-redux';
 import {check, PERMISSIONS, RESULTS, request} from 'react-native-permissions';
 import {firebase} from '@react-native-firebase/messaging';
+import {Notifications} from 'react-native-notifications';
 // import md5 from "react-native-md5";
 LogBox.ignoreAllLogs();
 
@@ -515,6 +516,7 @@ export default main_program = ({navigation}) => {
     await get_izin();
     await cek_permission();
     await PermissionsAndroid.request(PERMISSIONS.ANDROID.POST_NOTIFICATIONS);
+    Notifications.postLocalNotification({title: 'test'});
   }, []);
 
   // // NOTES kalo kyk gini, mirip componentdidupdate..tiap update akan nge run set effect ini

@@ -10,7 +10,7 @@ import {Notifications} from 'react-native-notifications';
 
 import {Provider, useDispatch, useSelector} from 'react-redux';
 import configureStore from './store/configureStore';
-import {firebase} from '@react-native-firebase/messaging';
+import {firebase, messaging} from '@react-native-firebase/messaging';
 
 //LIST COMPONENT CAMPUR
 import Menu_Login from './components/Login_Screen.js';
@@ -49,9 +49,10 @@ export default function app() {
   const [isloading, setloading] = useState(true);
   const unsubscribe = firebase.messaging().onMessage(async remoteMessage => {
     // Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
+    console.log(remoteMessage);
     Notifications.postLocalNotification({
-      title: 'test',
-      body: remoteMessage.data,
+      title: remoteMessage.notification.title,
+      body: remoteMessage.notification.body,
     });
   });
   const getFcmToken = async () => {

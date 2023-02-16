@@ -8,12 +8,15 @@ import RNFetchBlob from 'rn-fetch-blob';
 import axios from 'axios';
 import EDocDetail from './EDocDetail';
 import {useSelector} from 'react-redux';
+import {useIsFocused} from '@react-navigation/native';
 
 export default app = ({route, navigation}) => {
   const [detail, setDetail] = useState({});
   const [data, setData] = useState({});
   const stateData = useSelector(state => state);
   const [historyData, setHistoryData] = useState([]);
+  const isFocused = useIsFocused();
+
   mainData = email => {
     axios({
       method: 'post',
@@ -53,14 +56,15 @@ export default app = ({route, navigation}) => {
       mainData(res.data.UserApproval);
       getHistory(res.data.UserApproval);
     });
+    console.log('rendered');
     // getUserName('yonathan').then(res => {
     //   console.log(res);
     //   mainData(res.data.UserApproval);
     //   getHistory(res.data.UserApproval);
     // });
-    console.log(stateData);
-    console.log(data);
-  }, []);
+    // console.log(stateData);
+    // console.log(data);
+  }, [isFocused]);
 
   const styles = StyleSheet.create({
     textBold: {
@@ -130,6 +134,7 @@ export default app = ({route, navigation}) => {
               onPress={() => {
                 setDetail(item);
                 // setmodalVisible(!modalVisible);
+
                 console.log(item);
                 navigation.navigate('EDocDetail', {
                   detail: item,

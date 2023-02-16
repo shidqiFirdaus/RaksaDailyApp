@@ -106,10 +106,12 @@ export default app = ({navigation, route}) => {
   };
 
   const approval = () => {
-    axios.post(
-      'https://www.araksa.com/doc/docapi/insapprej.php',
-      approvalObject,
-    );
+    console.log(approvalObject);
+    axios
+      .post('https://www.araksa.com/doc/docapi/insapprej.php', approvalObject)
+      .then(res => {
+        console.log(res);
+      });
   };
 
   getTokenByUserId = userid => {
