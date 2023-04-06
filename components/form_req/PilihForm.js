@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable prettier/prettier */
-import React, {Component, useEffect, useState} from 'react';
+import React, {Component, useEffect, useState} from "react";
 import {
   View,
   Image,
@@ -13,8 +13,8 @@ import {
   ActivityIndicator,
   ScrollView,
   Platform,
-  Alert,
-} from 'react-native';
+  Alert
+} from "react-native";
 import {
   Container,
   Header,
@@ -32,25 +32,25 @@ import {
   Radio,
   List,
   Left,
-  Right,
-} from 'native-base';
-import DatePicker from 'react-native-datepicker';
-import styles from '../../css/CSS_PilihForm';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+  Right
+} from "native-base";
+import DatePicker from "react-native-datepicker";
+import styles from "../../css/CSS_PilihForm";
+import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 import {
   faBook,
   faEye,
   faHome,
   faPen,
   faUser,
-  faUsers,
-} from '@fortawesome/free-solid-svg-icons';
-import Moment from 'moment';
-import DeviceInfo from 'react-native-device-info';
-import {Provider, useDispatch, useSelector} from 'react-redux';
-import {NavigationContext} from 'react-navigation';
-import axios from 'axios';
-import LookupModal from 'react-native-lookup-modal';
+  faUsers
+} from "@fortawesome/free-solid-svg-icons";
+import Moment from "moment";
+import DeviceInfo from "react-native-device-info";
+import {Provider, useDispatch, useSelector} from "react-redux";
+import {NavigationContext} from "react-navigation";
+import axios from "axios";
+import LookupModal from "react-native-lookup-modal";
 
 // var arr=[]
 
@@ -58,15 +58,15 @@ import LookupModal from 'react-native-lookup-modal';
 //untuk RadioButton
 
 export default main_program = ({route, navigation}) => {
-  let [json_form, setjson_form] = useState('');
-  let [pil_form, setpil_form] = useState('');
-  let [kode_form, setkode_form] = useState('');
-  let [no_req, setno_req] = useState('RISTO1357');
+  let [json_form, setjson_form] = useState("");
+  let [pil_form, setpil_form] = useState("");
+  let [kode_form, setkode_form] = useState("");
+  let [no_req, setno_req] = useState("RISTO1357");
 
   //ngambil dari store
   const dispatch = useDispatch();
   const full_name_karyawan = useSelector(
-    state => state.data_login.full_name_karyawan,
+    state => state.data_login.full_name_karyawan
   );
   const kode_karyawan = useSelector(state => state.data_login.kode_karyawan);
   const nama_karyawan = useSelector(state => state.data_login.nama_karyawan);
@@ -75,108 +75,108 @@ export default main_program = ({route, navigation}) => {
   let role = dept.substring(0, 3);
 
   Back = () => {
-    navigation.replace('Halaman_Awal');
+    navigation.replace("Halaman_Awal");
   };
 
   CariHistory = () => {
-    if (role == 'KNW' || role == 'DRK') {
-      alert('Anda tidak bisa menggunakan fitur ini');
+    if (role == "KNW" || role == "DRK") {
+      alert("Anda tidak bisa menggunakan fitur ini");
     } else {
-      navigation.replace('Cari_History');
+      navigation.replace("Cari_History");
     }
   };
 
   LihatData = () => {
-    if (role == 'KNW' || role == 'DRK') {
-      alert('Anda tidak bisa menggunakan fitur ini');
+    if (role == "KNW" || role == "DRK") {
+      alert("Anda tidak bisa menggunakan fitur ini");
     } else {
-      navigation.replace('View_Data');
+      navigation.replace("View_Data");
     }
   };
 
   InputData = () => {
-    if (role == 'KNW' || role == 'DRK') {
-      alert('Anda tidak bisa menggunakan fitur ini');
+    if (role == "KNW" || role == "DRK") {
+      alert("Anda tidak bisa menggunakan fitur ini");
     } else {
-      navigation.replace('Input_Data');
+      navigation.replace("Input_Data");
     }
   };
 
   Supervisor = () => {
     // Alert.alert(nip)
-    navigation.replace('Monitoring');
+    navigation.replace("Monitoring");
   };
 
   LogOut = () => {
     // Alert.alert(nip)
     // this.Func_Logout();
-    navigation.replace('Menu_Login');
+    navigation.replace("Menu_Login");
   };
 
   konfirmasiLogout = () => {
     Alert.alert(
-      'Confirmation',
-      'Apakah anda ingin Keluar?',
+      "Confirmation",
+      "Apakah anda ingin Keluar?",
       [
         {
-          text: 'Cancel',
-          onPress: () => console.log('Cancel Pressed'),
-          style: 'cancel',
+          text: "Cancel",
+          onPress: () => console.log("Cancel Pressed"),
+          style: "cancel"
         },
-        {text: 'Ya', onPress: () => LogOut()},
+        {text: "Ya", onPress: () => LogOut()}
       ],
-      {cancelable: false},
+      {cancelable: false}
     );
   };
 
   validasi = () => {
     let kode = kode_form;
-    if (kode == '009') {
-      navigation.replace('EDocument');
-    }
+    // if (kode == "009") {
+    //   navigation.replace("EDocument");
+    // }
     //Reimburse
 
-    if (kode == '008') {
-      navigation.replace('Reimburse');
+    if (kode == "008") {
+      navigation.replace("MenuLelang");
     }
     // Tinta
-    if (kode == '003') {
-      navigation.replace('Permintaan_Tinta');
-      console.log('aaaaaaaaa');
+    if (kode == "003") {
+      navigation.replace("Permintaan_Tinta");
+      console.log("aaaaaaaaa");
     }
 
     //Kartu Nama
-    if (kode == '001') {
-      navigation.replace('KartuNama', {
-        isi_nama: full_name_karyawan,
+    if (kode == "001") {
+      navigation.replace("KartuNama", {
+        isi_nama: full_name_karyawan
       });
-      console.log('bbbbbbbbb');
+      console.log("bbbbbbbbb");
     }
 
     //Kartu Nama
-    if (kode == '004') {
-      navigation.replace('Stationary', {
-        no_req: no_req,
+    if (kode == "004") {
+      navigation.replace("Stationary", {
+        no_req: no_req
       });
-      console.log('bbbbbbbbb');
+      console.log("bbbbbbbbb");
     }
 
     //Grab
-    if (kode == '005') {
-      navigation.replace('PermintaanGrab');
-      console.log('bbbbbbbbb');
+    if (kode == "005") {
+      navigation.replace("PermintaanGrab");
+      console.log("bbbbbbbbb");
     }
 
     //Tips
-    if (kode == '006') {
-      navigation.replace('PenolakanTips');
-      console.log('bbbbbbbbb');
+    if (kode == "006") {
+      navigation.replace("PenolakanTips");
+      console.log("bbbbbbbbb");
     }
 
     //Reklame
-    if (kode == '007') {
-      navigation.replace('PajakReklame');
-      console.log('bbbbbbbbb');
+    if (kode == "007") {
+      navigation.replace("PajakReklame");
+      console.log("bbbbbbbbb");
     }
   };
 
@@ -194,30 +194,22 @@ export default main_program = ({route, navigation}) => {
   }, []);
 
   api_get_form = async () => {
-    console.log('jalan');
+    console.log("jalan");
     axios
       .post(
-        'https://www.raksa-test.com/prog-x/api/form_req/api_list_form_baru.php',
+        "https://www.raksa-test.com/prog-x/api/form_req/api_list_form_baru.php",
         {
-          key: '123nbhhnvn@**@*9nhvjjjn',
-        },
+          key: "123nbhhnvn@**@*9nhvjjjn"
+        }
       )
       .then(responseJson => {
         if (responseJson.data.Status == 1) {
-          responseJson.data.data.push(
-            {
-              rowid: '8',
-              req_form: 'REIMBURSE',
-              kode_form: '008',
-              nama_form: 'Reimburse',
-            },
-            {
-              rowid: '9',
-              req_form: 'E doc',
-              kode_form: '009',
-              nama_form: 'E dokumen',
-            },
-          );
+          responseJson.data.data.push({
+            rowid: "8",
+            req_form: "LELANG",
+            kode_form: "008",
+            nama_form: "Lelang"
+          });
           console.log(responseJson.data.data);
           setjson_form(responseJson.data.data);
         }
@@ -227,8 +219,9 @@ export default main_program = ({route, navigation}) => {
   return (
     <View>
       <Header
-        // style={{backgroundColor: "#5c2600"}}
-        style={{backgroundColor: '#fcce00'}}>
+        // style={{backgroundColor: ""}}
+        style={{backgroundColor: "#fcce00"}}
+      >
         <Left>
           <Image
             style={{
@@ -236,10 +229,10 @@ export default main_program = ({route, navigation}) => {
               height: 40,
               borderRadius: 40 / 2,
               marginLeft: 5,
-              marginTop: 10,
+              marginTop: 10
             }}
             // resizeMode='contain'
-            source={require('../../img/icon-left.png')}
+            source={require("../../img/icon-left.png")}
           />
         </Left>
         <Body></Body>
@@ -253,14 +246,14 @@ export default main_program = ({route, navigation}) => {
             <LookupModal
               data={json_form}
               value={pil_form}
-              itemTextStyle={{color: '#000000'}}
+              itemTextStyle={{color: "#000000"}}
               onSelect={async item => {
                 await setkode_form(item.kode_form);
                 await setpil_form(item.nama_form);
               }}
-              displayKey={'nama_form'}
-              selectButtonStyle={{width: '90%', borderWidth: 1, marginLeft: 8}}
-              placeholder={'Silahkan Pilih Form'}
+              displayKey={"nama_form"}
+              selectButtonStyle={{width: "90%", borderWidth: 1, marginLeft: 8}}
+              placeholder={"Silahkan Pilih Form"}
               selectText={pil_form}
             />
           </Item>
@@ -273,7 +266,8 @@ export default main_program = ({route, navigation}) => {
           style={styles.BtnCari}
           onPress={() => {
             validasi();
-          }}>
+          }}
+        >
           <Text style={styles.btnText}>Pilih</Text>
         </TouchableOpacity>
       </View>

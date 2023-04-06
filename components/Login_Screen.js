@@ -515,8 +515,8 @@ export default main_program = ({navigation}) => {
     await get_device_info();
     await get_izin();
     await cek_permission();
-    await PermissionsAndroid.request(PERMISSIONS.ANDROID.POST_NOTIFICATIONS);
-    Notifications.postLocalNotification({title: 'test'});
+    // await PermissionsAndroid.request(PERMISSIONS.ANDROID.POST_NOTIFICATIONS);
+    // Notifications.postLocalNotification({title: 'test'});
   }, []);
 
   // // NOTES kalo kyk gini, mirip componentdidupdate..tiap update akan nge run set effect ini

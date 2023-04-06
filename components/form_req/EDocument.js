@@ -1,14 +1,17 @@
-import React, {Component, useCallback, useEffect, useState} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {faBookOpen, faSortNumericDown} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {FlatList} from 'react-native-gesture-handler';
-import RNFetchBlob from 'rn-fetch-blob';
-import axios from 'axios';
-import EDocDetail from './EDocDetail';
-import {useSelector} from 'react-redux';
-import {useIsFocused} from '@react-navigation/native';
+import React, {Component, useCallback, useEffect, useState} from "react";
+import {View, Text, StyleSheet, TouchableOpacity} from "react-native";
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import {
+  faBookmark,
+  faBookOpen,
+  faSortNumericDown
+} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
+import {FlatList} from "react-native-gesture-handler";
+import axios from "axios";
+import EDocDetail from "./EDocDetail";
+import {useSelector} from "react-redux";
+import {useIsFocused} from "@react-navigation/native";
 
 export default app = ({route, navigation}) => {
   const [detail, setDetail] = useState({});
@@ -19,9 +22,9 @@ export default app = ({route, navigation}) => {
 
   mainData = email => {
     axios({
-      method: 'post',
-      url: 'https://www.araksa.com/doc/docapi/listsum.php',
-      data: {UserApproval: email, UserLogin: ''},
+      method: "post",
+      url: "https://www.araksa.com/doc/docapi/listsum.php",
+      data: {UserApproval: email, UserLogin: ""}
     })
       .then(res => {
         setData(res.data.code);
@@ -33,16 +36,16 @@ export default app = ({route, navigation}) => {
   };
 
   getUserName = email => {
-    return axios.post('https://www.araksa.com/doc/docapi/usr.php', {
-      UserLogin: email,
+    return axios.post("https://www.araksa.com/doc/docapi/usr.php", {
+      UserLogin: email
     });
   };
 
   getHistory = email => {
     axios
-      .post('https://www.araksa.com/doc/docapi/listhist.php', {
+      .post("https://www.araksa.com/doc/docapi/listhist.php", {
         UserApproval: email,
-        UserLogin: '',
+        UserLogin: ""
       })
       .then(res => {
         console.log(res.data);
@@ -56,7 +59,7 @@ export default app = ({route, navigation}) => {
       mainData(res.data.UserApproval);
       getHistory(res.data.UserApproval);
     });
-    console.log('rendered');
+    console.log("rendered");
     // getUserName('yonathan').then(res => {
     //   console.log(res);
     //   mainData(res.data.UserApproval);
@@ -68,13 +71,13 @@ export default app = ({route, navigation}) => {
 
   const styles = StyleSheet.create({
     textBold: {
-      fontWeight: 'bold',
-      color: 'black',
+      fontWeight: "bold",
+      color: "black"
     },
     text: {
-      color: 'black',
+      color: "black"
     },
-    centering: {margin: 10, padding: 10},
+    centering: {margin: 10, padding: 10}
   });
 
   function tab1() {
@@ -89,11 +92,12 @@ export default app = ({route, navigation}) => {
                 setDetail(item);
                 // setmodalVisible(!modalVisible);
                 console.log(item);
-                navigation.navigate('EDocDetail', {
+                navigation.navigate("EDocDetail", {
                   detail: item,
-                  history: false,
+                  history: false
                 });
-              }}>
+              }}
+            >
               <View
                 style={{
                   flex: 1,
@@ -101,18 +105,19 @@ export default app = ({route, navigation}) => {
                   borderWidth: 1,
                   borderRadius: 10,
                   padding: 10,
-                  backgroundColor: 'white',
-                }}>
+                  backgroundColor: "white"
+                }}
+              >
                 <Text style={styles.text}>
-                  {item.NoReg} {'   ' + item.Date}
+                  {item.NoReg} {"   " + item.Date}
                 </Text>
                 <Text style={styles.text}>judul: {item.Judul}</Text>
                 <Text style={styles.text}>Cabang: {item.Cabang}</Text>
                 <Text style={styles.text}>permintaan: {item.Permintaan}</Text>
                 <Text style={styles.text}>
-                  keterangan{' '}
-                  {'\n' + '\t\t' + String(item.Remarks).length > 100
-                    ? String(item.Remarks).substring(0, 100) + '...'
+                  keterangan{" "}
+                  {"\n" + "\t\t" + String(item.Remarks).length > 100
+                    ? String(item.Remarks).substring(0, 100) + "..."
                     : item.Remarks}
                 </Text>
               </View>
@@ -136,11 +141,12 @@ export default app = ({route, navigation}) => {
                 // setmodalVisible(!modalVisible);
 
                 console.log(item);
-                navigation.navigate('EDocDetail', {
+                navigation.navigate("EDocDetail", {
                   detail: item,
-                  history: true,
+                  history: true
                 });
-              }}>
+              }}
+            >
               <View
                 style={{
                   flex: 1,
@@ -148,20 +154,21 @@ export default app = ({route, navigation}) => {
                   borderWidth: 1,
                   borderRadius: 10,
                   padding: 10,
-                  backgroundColor: 'white',
-                  borderColor: 'yellow',
-                }}>
+                  backgroundColor: "white",
+                  borderColor: "yellow"
+                }}
+              >
                 <Text style={styles.text}>
-                  {item.NoReg} {'   ' + item.Date}
+                  {item.NoReg} {"   " + item.Date}
                 </Text>
                 <Text style={styles.text}>judul: {item.Judul}</Text>
                 <Text style={styles.text}>
                   Cabang: {item.Cabang} permintaan: {item.Permintaan}
                 </Text>
                 <Text style={styles.text}>
-                  keterangan{' '}
-                  {'\n' + '\t\t' + String(item.Remarks).length > 100
-                    ? String(item.Remarks).substring(0, 100) + '...'
+                  keterangan{" "}
+                  {"\n" + "\t\t" + String(item.Remarks).length > 100
+                    ? String(item.Remarks).substring(0, 100) + "..."
                     : item.Remarks}
                 </Text>
               </View>
@@ -185,7 +192,6 @@ export default app = ({route, navigation}) => {
     <Tab.Navigator>
       <Tab.Screen
         options={{
-          tabBarLabel: 'My Job',
           tabBarIcon: ({color, size}) => {
             return (
               <FontAwesomeIcon
@@ -193,16 +199,12 @@ export default app = ({route, navigation}) => {
                 style={{height: 50, width: 50}}
               />
             );
-          },
+          }
         }}
         name="Approval"
         component={tab1}
       />
-      <Tab.Screen
-        name="History Approval"
-        options={{tabBarIcon: () => <View></View>}}
-        component={historyTab}
-      />
+      <Tab.Screen name="History Approval" component={historyTab} />
     </Tab.Navigator>
   );
 };
